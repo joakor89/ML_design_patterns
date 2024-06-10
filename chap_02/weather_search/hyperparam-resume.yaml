@@ -1,0 +1,17 @@
+trainingInput:
+  scaleTier: CUSTOM
+  masterType: n1-highmem-2
+  masterConfig:
+    acceleratorConfig:
+      count: 2
+      type: NVIDIA_TESLA_K80
+  runtimeVersion: '2.2'
+  pythonVersion: '3.7'
+  scheduling:
+    maxWaitTime: 3600s
+  hyperparameters:
+    resumePreviousJobId: wxsearch_overfit_20201013_043059
+    maxParallelTrials: 3
+    maxTrials: 119
+    maxFailedTrials: 30
+    enableTrialEarlyStopping: True
